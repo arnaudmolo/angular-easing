@@ -80,8 +80,8 @@ module.exports = function(grunt) {
         report: 'gzip'
       },
       build: {
-        src: 'build/ng-smoothscroll.js',
-        dest: 'build/ng-smoothscroll.min.js'
+        src: 'build/angular-easing.js',
+        dest: 'build/angular-easing.min.js'
       }
     },
 
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'build/ng-smoothscroll.js':  'src/ng-smoothscroll.js',
+          'build/angular-easing.js':  'src/angular-easing.js',
         }
       }
     },
