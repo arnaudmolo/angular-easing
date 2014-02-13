@@ -1,6 +1,7 @@
 {
   "name": "ngSmoothScroll",
   "version": "0.2.0",
+  "main": "./build/angular-easing.min.js",
   "authors": [
     "Arnaud Pichon <arnaud@onesime.fr>"
   ],
