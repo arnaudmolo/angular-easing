@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="EasingExample">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body{
+      height: 3000px;
+    }
+    #first-scroll{
+      height: 1500px;
+    }
+    .cible{
+      height: 5px;
+      background-color: red;
+      width: 0;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div
+      ng-controller="MainCtrl"
+    >
+      <div
+        ng-repeat="(key, animation_name) in animation_functions"
+      >
+        <h2>{{ animation_name }}</h2>
+        <div
+          class="cible"
+          ng-style="{width: width + 'px'}"
+        >
+          
+        </div>
+        <button
+          ng-click="launch()"
+        > Launch me ! </button>
+      </div>
+    </div>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="/.tmp/scripts/angular-easing.js"></script>
+  </body>
+</html>
